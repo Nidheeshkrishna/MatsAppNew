@@ -1,0 +1,185 @@
+AddCoverImage(105272, coverpath)
+                                                .then((value) =>
+                                                    coverstatus = value!.result)
+                                                .whenComplete(() => {
+                                                      if (coverstatus == 1)
+                                                        {
+                                                          setState(() {
+                                                            loading = !loading;
+                                                          })
+                                                        }
+                                                      else
+                                                        {
+                                                          Fluttertoast.showToast(
+                                                              msg:
+                                                                  "Something went wrong",
+                                                              toastLength: Toast
+                                                                  .LENGTH_SHORT,
+                                                              gravity:
+                                                                  ToastGravity
+                                                                      .CENTER,
+                                                              timeInSecForIosWeb:
+                                                                  1,
+                                                              backgroundColor:
+                                                                  Colors.red,
+                                                              textColor:
+                                                                  Colors.white,
+                                                              fontSize: 16.0),
+                                                        }
+                                                    }),
+                                            AddPanCardImage(105272, pancardpath)
+                                                .then((value) =>
+                                                    panstatus = value!.result)
+                                                .whenComplete(() => {
+                                                      if (panstatus == 1)
+                                                        {
+                                                          setState(() {
+                                                            loading = !loading;
+                                                          })
+                                                        }
+                                                      else
+                                                        {
+                                                          Fluttertoast.showToast(
+                                                              msg:
+                                                                  "Something went wrong",
+                                                              toastLength: Toast
+                                                                  .LENGTH_SHORT,
+                                                              gravity:
+                                                                  ToastGravity
+                                                                      .CENTER,
+                                                              timeInSecForIosWeb:
+                                                                  1,
+                                                              backgroundColor:
+                                                                  Colors.red,
+                                                              textColor:
+                                                                  Colors.white,
+                                                              fontSize: 16.0),
+                                                        }
+                                                    }),
+                                            AddadharCardImage(105272, adharpath)
+                                                .then((value) =>
+                                                    adharstatus = value!.result)
+                                                .whenComplete(() => {
+                                                      if (adharstatus == 1)
+                                                        {
+                                                          setState(() {
+                                                            loading = !loading;
+                                                          })
+                                                        }
+                                                      else
+                                                        {
+                                                          Fluttertoast.showToast(
+                                                              msg:
+                                                                  "Something went wrong",
+                                                              toastLength: Toast
+                                                                  .LENGTH_SHORT,
+                                                              gravity:
+                                                                  ToastGravity
+                                                                      .CENTER,
+                                                              timeInSecForIosWeb:
+                                                                  1,
+                                                              backgroundColor:
+                                                                  Colors.red,
+                                                              textColor:
+                                                                  Colors.white,
+                                                              fontSize: 16.0),
+                                                        }
+                                                    }),
+                                            AddRegistrationdocImage(
+                                                    105272, certificatepath)
+                                                .then((value) =>
+                                                    certificatestatus =
+                                                        value!.result)
+                                                .whenComplete(() => {
+                                                      if (certificatestatus ==
+                                                          1)
+                                                        {
+                                                          setState(() {
+                                                            loading = !loading;
+                                                          })
+                                                        }
+                                                      else
+                                                        {
+                                                          Fluttertoast.showToast(
+                                                              msg:
+                                                                  "Something went wrong",
+                                                              toastLength: Toast
+                                                                  .LENGTH_SHORT,
+                                                              gravity:
+                                                                  ToastGravity
+                                                                      .CENTER,
+                                                              timeInSecForIosWeb:
+                                                                  1,
+                                                              backgroundColor:
+                                                                  Colors.red,
+                                                              textColor:
+                                                                  Colors.white,
+                                                              fontSize: 16.0),
+                                                        }
+                                                    }),
+                                            AddshopFrontImage(
+                                                    105272, shopfrontpath)
+                                                .then((value) =>
+                                                    shopfrontstatus =
+                                                        value!.result)
+                                                .whenComplete(() => {
+                                                      if (shopfrontstatus == 1)
+                                                        {
+                                                          setState(() {
+                                                            loading = !loading;
+                                                          }),
+                                                          Fluttertoast.showToast(
+                                                              msg:
+                                                                  "Editing completed",
+                                                              toastLength: Toast
+                                                                  .LENGTH_SHORT,
+                                                              gravity:
+                                                                  ToastGravity
+                                                                      .TOP,
+                                                              timeInSecForIosWeb:
+                                                                  1,
+                                                              backgroundColor:
+                                                                  Colors.orange,
+                                                              textColor:
+                                                                  Colors.white,
+                                                              fontSize: 16.0),
+                                                          Navigator.push(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) =>
+                                                                        HomePage(
+                                                                          mobile:
+                                                                              '',
+                                                                        )),
+                                                          )
+                                                        }
+                                                      else
+                                                        {
+                                                          Fluttertoast.showToast(
+                                                              msg:
+                                                                  "Check your internet/ something went wrong",
+                                                              toastLength: Toast
+                                                                  .LENGTH_LONG,
+                                                              gravity:
+                                                                  ToastGravity
+                                                                      .CENTER,
+                                                              timeInSecForIosWeb:
+                                                                  1,
+                                                              backgroundColor:
+                                                                  Colors.red,
+                                                              textColor:
+                                                                  Colors.white,
+                                                              fontSize: 16.0),
+                                                        }
+                                                    }),
+                                                    Navigator.push(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                                builder:
+                                                                    (context) =>
+                                                                        HomePage(
+                                                                          mobile:
+                                                                              '',
+                                                                        )),
+                                                          )
